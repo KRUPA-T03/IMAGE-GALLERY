@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+            <META name="VIEWPORT" content="WIDTH=DEVICE-WIDTH", INTIAL-SCALE="1.0">
+<TITLE>IMAGE GALLERY</TITLE>
+<LINK REL="stylesheet" href="style.css">
+    </HEAD>
+    <body>
+        <h1 align="center"><b><u>Guna Caves</u></b></h1>
+        <br><br>
+        <div class="full-img" id="fullImgBox">
+            <img src="guna 01.webp" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        <DIV class="IMAGE GALLERY">
+            <img src="guna 01.webp" height="200" width="300" onclick="openFullImg(this.src)">
+            <img src="guna 1.jpg" height="200" width="300" onclick="openFullImg(this.src)">
+            <img src="guna 2.jpg" height="200" width="300" onclick="openFullImg(this.src)">
+            <img src="guna 3.jpg" height="200" width="300" onclick="openFullImg(this.src)">
+            <img src="guna 4.jpg" height="200" width="300" onclick="openFullImg(this.src)">
+            <img src="guna 5.webp" height="200" width="300" onclick="openFullImg(this.src)">
+
+        </DIV>
+        <script>
+            var fullImgBox = document.getElementById("fullImgBox");
+            var fullImg = document.getElementById("fullImg");
+
+            function openFullImg(pic){
+     fullImgBox.style.display = "flex";
+     fullImg.src = pic;
+            }
+            function closeFullImg(){
+                fullImgBox.style.display = "none";
+            }
+        </script>
+    </body>
+</HTML>
+
